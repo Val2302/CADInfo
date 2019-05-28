@@ -37,14 +37,13 @@
 			this.stripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
 			this.ButtoncEncrypt = new System.Windows.Forms.ToolStripButton();
 			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.ButtonPlay = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
 			this.ButtonCear = new System.Windows.Forms.ToolStripButton();
 			this.groupBoxOutput = new System.Windows.Forms.GroupBox();
 			this.textBoxOutput = new System.Windows.Forms.TextBox();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.splitContainer = new System.Windows.Forms.SplitContainer();
-			this.toolStripMorze = new System.Windows.Forms.ToolStrip();
-			this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
-			this.ButtonPlay = new System.Windows.Forms.ToolStripButton();
 			this.groupBoxInput.SuspendLayout();
 			this.toolStripCC.SuspendLayout();
 			this.groupBoxOutput.SuspendLayout();
@@ -60,7 +59,7 @@
 			this.groupBoxInput.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.groupBoxInput.Location = new System.Drawing.Point(0, 0);
 			this.groupBoxInput.Name = "groupBoxInput";
-			this.groupBoxInput.Size = new System.Drawing.Size(573, 241);
+			this.groupBoxInput.Size = new System.Drawing.Size(573, 253);
 			this.groupBoxInput.TabIndex = 0;
 			this.groupBoxInput.TabStop = false;
 			this.groupBoxInput.Text = "Ввод";
@@ -74,7 +73,7 @@
 			this.textBoxInput.Multiline = true;
 			this.textBoxInput.Name = "textBoxInput";
 			this.textBoxInput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.textBoxInput.Size = new System.Drawing.Size(561, 216);
+			this.textBoxInput.Size = new System.Drawing.Size(561, 228);
 			this.textBoxInput.TabIndex = 0;
 			this.textBoxInput.Text = "Манило море";
 			// 
@@ -130,6 +129,21 @@
 			this.toolStripSeparator2.Name = "toolStripSeparator2";
 			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
 			// 
+			// ButtonPlay
+			// 
+			this.ButtonPlay.Image = ((System.Drawing.Image)(resources.GetObject("ButtonPlay.Image")));
+			this.ButtonPlay.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.ButtonPlay.Name = "ButtonPlay";
+			this.ButtonPlay.Size = new System.Drawing.Size(117, 22);
+			this.ButtonPlay.Text = "Воиспроизвести";
+			this.ButtonPlay.ToolTipText = "Воиспроизвести";
+			this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
+			// 
+			// toolStripSeparator3
+			// 
+			this.toolStripSeparator3.Name = "toolStripSeparator3";
+			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
+			// 
 			// ButtonCear
 			// 
 			this.ButtonCear.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCear.Image")));
@@ -145,7 +159,7 @@
 			this.groupBoxOutput.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.groupBoxOutput.Location = new System.Drawing.Point(0, 0);
 			this.groupBoxOutput.Name = "groupBoxOutput";
-			this.groupBoxOutput.Size = new System.Drawing.Size(573, 251);
+			this.groupBoxOutput.Size = new System.Drawing.Size(573, 265);
 			this.groupBoxOutput.TabIndex = 0;
 			this.groupBoxOutput.TabStop = false;
 			this.groupBoxOutput.Text = "Вывод";
@@ -161,7 +175,7 @@
 			this.textBoxOutput.Name = "textBoxOutput";
 			this.textBoxOutput.ReadOnly = true;
 			this.textBoxOutput.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-			this.textBoxOutput.Size = new System.Drawing.Size(561, 226);
+			this.textBoxOutput.Size = new System.Drawing.Size(561, 240);
 			this.textBoxOutput.TabIndex = 1;
 			// 
 			// toolTip
@@ -173,7 +187,7 @@
 			this.splitContainer.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-			this.splitContainer.Location = new System.Drawing.Point(0, 57);
+			this.splitContainer.Location = new System.Drawing.Point(0, 31);
 			this.splitContainer.Name = "splitContainer";
 			this.splitContainer.Orientation = System.Windows.Forms.Orientation.Horizontal;
 			// 
@@ -184,42 +198,14 @@
 			// splitContainer.Panel2
 			// 
 			this.splitContainer.Panel2.Controls.Add(this.groupBoxOutput);
-			this.splitContainer.Size = new System.Drawing.Size(573, 496);
-			this.splitContainer.SplitterDistance = 241;
+			this.splitContainer.Size = new System.Drawing.Size(573, 522);
+			this.splitContainer.SplitterDistance = 253;
 			this.splitContainer.TabIndex = 6;
-			// 
-			// toolStripMorze
-			// 
-			this.toolStripMorze.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-			this.toolStripMorze.AutoSize = false;
-			this.toolStripMorze.Dock = System.Windows.Forms.DockStyle.None;
-			this.toolStripMorze.Location = new System.Drawing.Point(0, 28);
-			this.toolStripMorze.Name = "toolStripMorze";
-			this.toolStripMorze.Size = new System.Drawing.Size(573, 25);
-			this.toolStripMorze.TabIndex = 1;
-			this.toolStripMorze.Text = "toolStrip1";
-			// 
-			// toolStripSeparator3
-			// 
-			this.toolStripSeparator3.Name = "toolStripSeparator3";
-			this.toolStripSeparator3.Size = new System.Drawing.Size(6, 25);
-			// 
-			// ButtonPlay
-			// 
-			this.ButtonPlay.Image = ((System.Drawing.Image)(resources.GetObject("ButtonPlay.Image")));
-			this.ButtonPlay.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.ButtonPlay.Name = "ButtonPlay";
-			this.ButtonPlay.Size = new System.Drawing.Size(117, 22);
-			this.ButtonPlay.Text = "Воиспроизвести";
-			this.ButtonPlay.ToolTipText = "Воиспроизвести";
-			this.ButtonPlay.Click += new System.EventHandler(this.ButtonPlay_Click);
 			// 
 			// CodeMorze
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.Controls.Add(this.toolStripMorze);
 			this.Controls.Add(this.toolStripCC);
 			this.Controls.Add(this.splitContainer);
 			this.Name = "CodeMorze";
@@ -253,7 +239,6 @@
 		private System.Windows.Forms.SplitContainer splitContainer;
 		private System.Windows.Forms.ToolStripButton ButtoncEncrypt;
 		private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
-		private System.Windows.Forms.ToolStrip toolStripMorze;
 		private System.Windows.Forms.ToolStripButton ButtonPlay;
 	}
 }

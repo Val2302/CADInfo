@@ -23,7 +23,7 @@ namespace CADInfo.Elements
 			Visible = true;
 		}
 
-		private void ButtonCryptCC_Click ( object sender, EventArgs e )
+		private void ButtonCrypt_Click ( object sender, EventArgs e )
 		{
 			textBoxOutput.Clear( );
 			var key = textBoxKey.Text.GetHashCode( );
@@ -34,7 +34,7 @@ namespace CADInfo.Elements
 			}
 		}
 
-		private void ButtoncEncryptCC_Click ( object sender, EventArgs e )
+		private void ButtoncEncrypt_Click ( object sender, EventArgs e )
 		{
 			textBoxOutput.Clear( );
 			var key = textBoxKey.Text.GetHashCode( );

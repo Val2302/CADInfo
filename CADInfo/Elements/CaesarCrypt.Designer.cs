@@ -31,20 +31,20 @@
 			this.components = new System.ComponentModel.Container();
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CaesarCrypt));
 			this.toolStripCC = new System.Windows.Forms.ToolStrip();
-			this.ButtonCryptCC = new System.Windows.Forms.ToolStripButton();
-			this.stripSeparatorCC1 = new System.Windows.Forms.ToolStripSeparator();
-			this.ButtoncEncryptCC = new System.Windows.Forms.ToolStripButton();
+			this.ButtonCrypt = new System.Windows.Forms.ToolStripButton();
+			this.stripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+			this.ButtoncEncrypt = new System.Windows.Forms.ToolStripButton();
+			this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+			this.keyLabel = new System.Windows.Forms.ToolStripLabel();
+			this.textBoxKey = new System.Windows.Forms.ToolStripTextBox();
+			this.toolStripSeparatorCC3 = new System.Windows.Forms.ToolStripSeparator();
+			this.ButtonCear = new System.Windows.Forms.ToolStripButton();
 			this.groupBoxInput = new System.Windows.Forms.GroupBox();
 			this.textBoxInput = new System.Windows.Forms.TextBox();
 			this.groupBoxOutput = new System.Windows.Forms.GroupBox();
 			this.textBoxOutput = new System.Windows.Forms.TextBox();
 			this.toolTip = new System.Windows.Forms.ToolTip(this.components);
 			this.splitContainer = new System.Windows.Forms.SplitContainer();
-			this.ButtonCear = new System.Windows.Forms.ToolStripButton();
-			this.toolStripSeparatorCC2 = new System.Windows.Forms.ToolStripSeparator();
-			this.toolStripSeparatorCC3 = new System.Windows.Forms.ToolStripSeparator();
-			this.keyLabel = new System.Windows.Forms.ToolStripLabel();
-			this.textBoxKey = new System.Windows.Forms.ToolStripTextBox();
 			this.toolStripCC.SuspendLayout();
 			this.groupBoxInput.SuspendLayout();
 			this.groupBoxOutput.SuspendLayout();
@@ -61,10 +61,10 @@
 			this.toolStripCC.AutoSize = false;
 			this.toolStripCC.Dock = System.Windows.Forms.DockStyle.None;
 			this.toolStripCC.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.ButtonCryptCC,
-            this.stripSeparatorCC1,
-            this.ButtoncEncryptCC,
-            this.toolStripSeparatorCC2,
+            this.ButtonCrypt,
+            this.stripSeparator1,
+            this.ButtoncEncrypt,
+            this.toolStripSeparator2,
             this.keyLabel,
             this.textBoxKey,
             this.toolStripSeparatorCC3,
@@ -75,32 +75,64 @@
 			this.toolStripCC.TabIndex = 1;
 			this.toolStripCC.Text = "toolStrip1";
 			// 
-			// ButtonCryptCC
+			// ButtonCrypt
 			// 
-			this.ButtonCryptCC.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCryptCC.Image")));
-			this.ButtonCryptCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.ButtonCryptCC.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.ButtonCryptCC.Name = "ButtonCryptCC";
-			this.ButtonCryptCC.Size = new System.Drawing.Size(104, 22);
-			this.ButtonCryptCC.Text = "Зашифровать";
-			this.ButtonCryptCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.ButtonCryptCC.Click += new System.EventHandler(this.ButtonCryptCC_Click);
+			this.ButtonCrypt.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCrypt.Image")));
+			this.ButtonCrypt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.ButtonCrypt.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.ButtonCrypt.Name = "ButtonCrypt";
+			this.ButtonCrypt.Size = new System.Drawing.Size(104, 22);
+			this.ButtonCrypt.Text = "Зашифровать";
+			this.ButtonCrypt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.ButtonCrypt.Click += new System.EventHandler(this.ButtonCrypt_Click);
 			// 
-			// stripSeparatorCC1
+			// stripSeparator1
 			// 
-			this.stripSeparatorCC1.Name = "stripSeparatorCC1";
-			this.stripSeparatorCC1.Size = new System.Drawing.Size(6, 25);
+			this.stripSeparator1.Name = "stripSeparator1";
+			this.stripSeparator1.Size = new System.Drawing.Size(6, 25);
 			// 
-			// ButtoncEncryptCC
+			// ButtoncEncrypt
 			// 
-			this.ButtoncEncryptCC.Image = ((System.Drawing.Image)(resources.GetObject("ButtoncEncryptCC.Image")));
-			this.ButtoncEncryptCC.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.ButtoncEncryptCC.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.ButtoncEncryptCC.Name = "ButtoncEncryptCC";
-			this.ButtoncEncryptCC.Size = new System.Drawing.Size(110, 22);
-			this.ButtoncEncryptCC.Text = "Расшифровать";
-			this.ButtoncEncryptCC.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			this.ButtoncEncryptCC.Click += new System.EventHandler(this.ButtoncEncryptCC_Click);
+			this.ButtoncEncrypt.Image = ((System.Drawing.Image)(resources.GetObject("ButtoncEncrypt.Image")));
+			this.ButtoncEncrypt.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+			this.ButtoncEncrypt.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.ButtoncEncrypt.Name = "ButtoncEncrypt";
+			this.ButtoncEncrypt.Size = new System.Drawing.Size(110, 22);
+			this.ButtoncEncrypt.Text = "Расшифровать";
+			this.ButtoncEncrypt.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.ButtoncEncrypt.Click += new System.EventHandler(this.ButtoncEncrypt_Click);
+			// 
+			// toolStripSeparator2
+			// 
+			this.toolStripSeparator2.Name = "toolStripSeparator2";
+			this.toolStripSeparator2.Size = new System.Drawing.Size(6, 25);
+			// 
+			// keyLabel
+			// 
+			this.keyLabel.Name = "keyLabel";
+			this.keyLabel.Size = new System.Drawing.Size(38, 22);
+			this.keyLabel.Text = "Ключ";
+			// 
+			// textBoxKey
+			// 
+			this.textBoxKey.BorderStyle = System.Windows.Forms.BorderStyle.None;
+			this.textBoxKey.Name = "textBoxKey";
+			this.textBoxKey.Size = new System.Drawing.Size(100, 25);
+			this.textBoxKey.Text = "123";
+			// 
+			// toolStripSeparatorCC3
+			// 
+			this.toolStripSeparatorCC3.Name = "toolStripSeparatorCC3";
+			this.toolStripSeparatorCC3.Size = new System.Drawing.Size(6, 25);
+			// 
+			// ButtonCear
+			// 
+			this.ButtonCear.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCear.Image")));
+			this.ButtonCear.ImageTransparentColor = System.Drawing.Color.Magenta;
+			this.ButtonCear.Name = "ButtonCear";
+			this.ButtonCear.Size = new System.Drawing.Size(79, 22);
+			this.ButtonCear.Text = "Очистить";
+			this.ButtonCear.Click += new System.EventHandler(this.ButtonCear_Click);
 			// 
 			// groupBoxInput
 			// 
@@ -174,38 +206,6 @@
 			this.splitContainer.SplitterDistance = 254;
 			this.splitContainer.TabIndex = 4;
 			// 
-			// ButtonCear
-			// 
-			this.ButtonCear.Image = ((System.Drawing.Image)(resources.GetObject("ButtonCear.Image")));
-			this.ButtonCear.ImageTransparentColor = System.Drawing.Color.Magenta;
-			this.ButtonCear.Name = "ButtonCear";
-			this.ButtonCear.Size = new System.Drawing.Size(79, 22);
-			this.ButtonCear.Text = "Очистить";
-			this.ButtonCear.Click += new System.EventHandler(this.ButtonCear_Click);
-			// 
-			// toolStripSeparatorCC2
-			// 
-			this.toolStripSeparatorCC2.Name = "toolStripSeparatorCC2";
-			this.toolStripSeparatorCC2.Size = new System.Drawing.Size(6, 25);
-			// 
-			// toolStripSeparatorCC3
-			// 
-			this.toolStripSeparatorCC3.Name = "toolStripSeparatorCC3";
-			this.toolStripSeparatorCC3.Size = new System.Drawing.Size(6, 25);
-			// 
-			// keyLabel
-			// 
-			this.keyLabel.Name = "keyLabel";
-			this.keyLabel.Size = new System.Drawing.Size(38, 22);
-			this.keyLabel.Text = "Ключ";
-			// 
-			// textBoxKey
-			// 
-			this.textBoxKey.BorderStyle = System.Windows.Forms.BorderStyle.None;
-			this.textBoxKey.Name = "textBoxKey";
-			this.textBoxKey.Size = new System.Drawing.Size(100, 25);
-			this.textBoxKey.Text = "123";
-			// 
 			// CaesarCrypt
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -231,16 +231,16 @@
 		#endregion
 
 		private System.Windows.Forms.ToolStrip toolStripCC;
-		private System.Windows.Forms.ToolStripButton ButtonCryptCC;
-		private System.Windows.Forms.ToolStripSeparator stripSeparatorCC1;
-		private System.Windows.Forms.ToolStripButton ButtoncEncryptCC;
+		private System.Windows.Forms.ToolStripButton ButtonCrypt;
+		private System.Windows.Forms.ToolStripSeparator stripSeparator1;
+		private System.Windows.Forms.ToolStripButton ButtoncEncrypt;
 		private System.Windows.Forms.GroupBox groupBoxInput;
 		private System.Windows.Forms.GroupBox groupBoxOutput;
 		private System.Windows.Forms.TextBox textBoxInput;
 		private System.Windows.Forms.TextBox textBoxOutput;
 		private System.Windows.Forms.ToolTip toolTip;
 		private System.Windows.Forms.SplitContainer splitContainer;
-		private System.Windows.Forms.ToolStripSeparator toolStripSeparatorCC2;
+		private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
 		private System.Windows.Forms.ToolStripButton ButtonCear;
 		private System.Windows.Forms.ToolStripLabel keyLabel;
 		private System.Windows.Forms.ToolStripTextBox textBoxKey;

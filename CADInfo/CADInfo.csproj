@@ -59,7 +59,6 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Addition.cs" />
     <Compile Include="Elements\CaesarCrypt.cs">
       <SubType>UserControl</SubType>
     </Compile>
