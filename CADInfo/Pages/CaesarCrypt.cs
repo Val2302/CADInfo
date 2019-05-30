@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace CADInfo.Elements
+namespace CADInfo.Pages
 {
 	public partial class CaesarCrypt : UserControl
 	{

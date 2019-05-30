@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CADInfo.Elements;
+using CADInfo.Pages;
 
 namespace CADInfo
 {
@@ -19,6 +19,9 @@ namespace CADInfo
 
 			CaesarCypherPage.Controls.Add( new CaesarCrypt( ) );
 			MorzeCodePage.Controls.Add( new CodeMorze( ) );
+			NumbersPage.Controls.Add( new Numbers( ) );
+			StringsPage.Controls.Add( new Strings( ) );
+			ColorPage.Controls.Add( new Colors( ) );
 		}
 
 		private void MainForm_Shown ( object sender, EventArgs e )

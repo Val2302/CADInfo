@@ -28,14 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tabControl = new System.Windows.Forms.TabControl();
+			this.CaesarCypherPage = new System.Windows.Forms.TabPage();
 			this.MorzeCodePage = new System.Windows.Forms.TabPage();
+			this.NumbersPage = new System.Windows.Forms.TabPage();
 			this.splitContainer = new System.Windows.Forms.SplitContainer();
-			this.labelTitle = new System.Windows.Forms.Label();
 			this.contentDataGrid = new System.Windows.Forms.DataGridView();
 			this.ContentColumn = new System.Windows.Forms.DataGridViewButtonColumn();
-			this.CaesarCypherPage = new System.Windows.Forms.TabPage();
+			this.labelTitle = new System.Windows.Forms.Label();
+			this.StringsPage = new System.Windows.Forms.TabPage();
+			this.ColorPage = new System.Windows.Forms.TabPage();
 			this.tabControl.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
 			this.splitContainer.Panel1.SuspendLayout();
@@ -48,22 +51,45 @@
 			// 
 			this.tabControl.Controls.Add(this.CaesarCypherPage);
 			this.tabControl.Controls.Add(this.MorzeCodePage);
+			this.tabControl.Controls.Add(this.NumbersPage);
+			this.tabControl.Controls.Add(this.StringsPage);
+			this.tabControl.Controls.Add(this.ColorPage);
 			this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tabControl.Location = new System.Drawing.Point(0, 0);
 			this.tabControl.Name = "tabControl";
 			this.tabControl.SelectedIndex = 0;
-			this.tabControl.Size = new System.Drawing.Size(547, 583);
+			this.tabControl.Size = new System.Drawing.Size(687, 621);
 			this.tabControl.TabIndex = 0;
+			// 
+			// CaesarCypherPage
+			// 
+			this.CaesarCypherPage.Location = new System.Drawing.Point(4, 22);
+			this.CaesarCypherPage.Name = "CaesarCypherPage";
+			this.CaesarCypherPage.Padding = new System.Windows.Forms.Padding(3);
+			this.CaesarCypherPage.Size = new System.Drawing.Size(679, 595);
+			this.CaesarCypherPage.TabIndex = 0;
+			this.CaesarCypherPage.Text = "1. Шифр Цезаря";
+			this.CaesarCypherPage.UseVisualStyleBackColor = true;
 			// 
 			// MorzeCodePage
 			// 
 			this.MorzeCodePage.Location = new System.Drawing.Point(4, 22);
 			this.MorzeCodePage.Name = "MorzeCodePage";
 			this.MorzeCodePage.Padding = new System.Windows.Forms.Padding(3);
-			this.MorzeCodePage.Size = new System.Drawing.Size(539, 557);
+			this.MorzeCodePage.Size = new System.Drawing.Size(539, 595);
 			this.MorzeCodePage.TabIndex = 1;
 			this.MorzeCodePage.Text = "2. Азбука Морзе";
 			this.MorzeCodePage.UseVisualStyleBackColor = true;
+			// 
+			// NumbersPage
+			// 
+			this.NumbersPage.Location = new System.Drawing.Point(4, 22);
+			this.NumbersPage.Name = "NumbersPage";
+			this.NumbersPage.Padding = new System.Windows.Forms.Padding(3);
+			this.NumbersPage.Size = new System.Drawing.Size(679, 595);
+			this.NumbersPage.TabIndex = 2;
+			this.NumbersPage.Text = "3. Числа";
+			this.NumbersPage.UseVisualStyleBackColor = true;
 			// 
 			// splitContainer
 			// 
@@ -81,20 +107,10 @@
 			// splitContainer.Panel2
 			// 
 			this.splitContainer.Panel2.Controls.Add(this.tabControl);
-			this.splitContainer.Size = new System.Drawing.Size(755, 587);
+			this.splitContainer.Size = new System.Drawing.Size(895, 625);
 			this.splitContainer.SplitterDistance = 203;
 			this.splitContainer.SplitterWidth = 1;
 			this.splitContainer.TabIndex = 1;
-			// 
-			// labelTitle
-			// 
-			this.labelTitle.AutoSize = true;
-			this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-			this.labelTitle.Location = new System.Drawing.Point(28, 7);
-			this.labelTitle.Name = "labelTitle";
-			this.labelTitle.Size = new System.Drawing.Size(148, 25);
-			this.labelTitle.TabIndex = 0;
-			this.labelTitle.Text = "Содержание";
 			// 
 			// contentDataGrid
 			// 
@@ -118,34 +134,54 @@
 			this.contentDataGrid.ShowCellToolTips = false;
 			this.contentDataGrid.ShowEditingIcon = false;
 			this.contentDataGrid.ShowRowErrors = false;
-			this.contentDataGrid.Size = new System.Drawing.Size(174, 536);
+			this.contentDataGrid.Size = new System.Drawing.Size(174, 574);
 			this.contentDataGrid.TabIndex = 1;
 			this.contentDataGrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ContentDataGrid_CellClick);
 			// 
 			// ContentColumn
 			// 
-			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ContentColumn.DefaultCellStyle = dataGridViewCellStyle2;
+			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ContentColumn.DefaultCellStyle = dataGridViewCellStyle3;
 			this.ContentColumn.Frozen = true;
 			this.ContentColumn.HeaderText = "Содержание";
 			this.ContentColumn.Name = "ContentColumn";
 			this.ContentColumn.ReadOnly = true;
 			// 
-			// CaesarCypherPage
+			// labelTitle
 			// 
-			this.CaesarCypherPage.Location = new System.Drawing.Point(4, 22);
-			this.CaesarCypherPage.Name = "CaesarCypherPage";
-			this.CaesarCypherPage.Padding = new System.Windows.Forms.Padding(3);
-			this.CaesarCypherPage.Size = new System.Drawing.Size(539, 557);
-			this.CaesarCypherPage.TabIndex = 0;
-			this.CaesarCypherPage.Text = "1. Шифр Цезаря";
-			this.CaesarCypherPage.UseVisualStyleBackColor = true;
+			this.labelTitle.AutoSize = true;
+			this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+			this.labelTitle.Location = new System.Drawing.Point(28, 7);
+			this.labelTitle.Name = "labelTitle";
+			this.labelTitle.Size = new System.Drawing.Size(148, 25);
+			this.labelTitle.TabIndex = 0;
+			this.labelTitle.Text = "Содержание";
+			// 
+			// StringsPage
+			// 
+			this.StringsPage.Location = new System.Drawing.Point(4, 22);
+			this.StringsPage.Name = "StringsPage";
+			this.StringsPage.Padding = new System.Windows.Forms.Padding(3);
+			this.StringsPage.Size = new System.Drawing.Size(679, 595);
+			this.StringsPage.TabIndex = 3;
+			this.StringsPage.Text = "4. Строки";
+			this.StringsPage.UseVisualStyleBackColor = true;
+			// 
+			// ColorPage
+			// 
+			this.ColorPage.Location = new System.Drawing.Point(4, 22);
+			this.ColorPage.Name = "ColorPage";
+			this.ColorPage.Padding = new System.Windows.Forms.Padding(3);
+			this.ColorPage.Size = new System.Drawing.Size(679, 595);
+			this.ColorPage.TabIndex = 4;
+			this.ColorPage.Text = "5. Цвета";
+			this.ColorPage.UseVisualStyleBackColor = true;
 			// 
 			// MainForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(755, 587);
+			this.ClientSize = new System.Drawing.Size(895, 625);
 			this.Controls.Add(this.splitContainer);
 			this.Name = "MainForm";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -171,6 +207,9 @@
         private System.Windows.Forms.DataGridView contentDataGrid;
 		private System.Windows.Forms.DataGridViewButtonColumn ContentColumn;
 		private System.Windows.Forms.TabPage CaesarCypherPage;
+		private System.Windows.Forms.TabPage NumbersPage;
+		private System.Windows.Forms.TabPage StringsPage;
+		private System.Windows.Forms.TabPage ColorPage;
 	}
 }
 

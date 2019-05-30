@@ -59,17 +59,29 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Elements\CaesarCrypt.cs">
+    <Compile Include="Pages\CaesarCrypt.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Elements\CaesarCrypt.Designer.cs">
+    <Compile Include="Pages\CaesarCrypt.Designer.cs">
       <DependentUpon>CaesarCrypt.cs</DependentUpon>
     </Compile>
-    <Compile Include="Elements\CodeMorze.cs">
+    <Compile Include="Pages\CodeMorze.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Elements\CodeMorze.Designer.cs">
+    <Compile Include="Pages\CodeMorze.Designer.cs">
       <DependentUpon>CodeMorze.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Colors.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Colors.Designer.cs">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\Numbers.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Numbers.Designer.cs">
+      <DependentUpon>Numbers.cs</DependentUpon>
     </Compile>
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -77,19 +89,34 @@
     <Compile Include="MainForm.Designer.cs">
       <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\Strings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\Strings.Designer.cs">
+      <DependentUpon>Strings.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Elements\CaesarCrypt.resx">
+    <EmbeddedResource Include="Pages\CaesarCrypt.resx">
       <DependentUpon>CaesarCrypt.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Elements\CodeMorze.resx">
+    <EmbeddedResource Include="Pages\CodeMorze.resx">
       <DependentUpon>CodeMorze.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Colors.resx">
+      <DependentUpon>Colors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Numbers.resx">
+      <DependentUpon>Numbers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\Strings.resx">
+      <DependentUpon>Strings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

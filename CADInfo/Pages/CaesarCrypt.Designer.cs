@@ -1,4 +1,4 @@
-﻿namespace CADInfo.Elements
+﻿namespace CADInfo.Pages
 {
 	partial class CaesarCrypt
 	{
