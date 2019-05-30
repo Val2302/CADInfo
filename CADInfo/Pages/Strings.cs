@@ -20,37 +20,59 @@ namespace CADInfo.Pages
 			Visible = true;
 		}
 
-		private void ButtonRun_Click ( object sender, EventArgs e )
+		private void ButtonConvertToCodes_Click ( object sender, EventArgs e )
 		{
 			if ( textBoxString.Text is null || textBoxString.Text == string.Empty )
 			{
 				return;
 			}
 
-			labelSymbolsCodes.Text = string.Empty;
+			labelOutput.Text = string.Empty;
 			labelInputCode.Text = string.Empty;
 			labelStandartCode.Text = string.Empty;
 			
 			foreach ( int symbol in textBoxString.Text )
 			{
-				labelSymbolsCodes.Text += symbol.ToString( ) + " ";
+				labelOutput.Text += symbol.ToString( ) + " ";
 			}
 
-			labelInputCode.Text = HashCode( labelSymbolsCodes.Text ).ToString( );
-			labelStandartCode.Text = labelSymbolsCodes.Text.GetHashCode( ).ToString( );
+			labelInputCode.Text = HashCode( labelOutput.Text ).ToString( );
+			labelStandartCode.Text = labelOutput.Text.GetHashCode( ).ToString( );
+		}
 
-			long HashCode ( string text )
+		private void ButtonConvertToSymbols_Click ( object sender, EventArgs e )
+		{
+			if ( textBoxString.Text is null || textBoxString.Text == string.Empty )
 			{
-				const int UTF_TABLE_LENGTH = 65_536;
-				long hash = 1;
-
-				for ( int i = 0; i < text.Length; i++ )
-				{
-					hash = UTF_TABLE_LENGTH << ( ( text[ i ] + 1 ) * ( i + 1 ) );
-				}
-
-				return hash;
+				return;
 			}
+
+			labelOutput.Text = string.Empty;
+			labelInputCode.Text = string.Empty;
+			labelStandartCode.Text = string.Empty;
+
+			string[] words = textBoxString.Text.Split( ' ' );
+
+			foreach ( var word in words )
+			{
+				labelOutput.Text += char.Parse( word ).ToString( ) + " ";
+			}
+
+			labelInputCode.Text = HashCode( labelOutput.Text ).ToString( );
+			labelStandartCode.Text = labelOutput.Text.GetHashCode( ).ToString( );
+		}
+
+		private long HashCode ( string text )
+		{
+			const int UTF_TABLE_LENGTH = 65_536;
+			long hash = 1;
+
+			for ( int i = 0; i < text.Length; i++ )
+			{
+				hash = UTF_TABLE_LENGTH << ( ( text[ i ] + 1 ) * ( i + 1 ) );
+			}
+
+			return hash;
 		}
 	}
 }

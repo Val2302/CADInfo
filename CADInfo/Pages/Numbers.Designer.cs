@@ -67,15 +67,15 @@
 			// textBoxDec
 			// 
 			this.textBoxDec.Location = new System.Drawing.Point(242, 22);
-			this.textBoxDec.MaxLength = 8;
+			this.textBoxDec.MaxLength = 32;
 			this.textBoxDec.Name = "textBoxDec";
-			this.textBoxDec.Size = new System.Drawing.Size(122, 23);
+			this.textBoxDec.Size = new System.Drawing.Size(444, 23);
 			this.textBoxDec.TabIndex = 0;
 			// 
 			// labelExpText
 			// 
 			this.labelExpText.AutoSize = true;
-			this.labelExpText.Location = new System.Drawing.Point(8, 56);
+			this.labelExpText.Location = new System.Drawing.Point(8, 105);
 			this.labelExpText.Name = "labelExpText";
 			this.labelExpText.Size = new System.Drawing.Size(228, 16);
 			this.labelExpText.TabIndex = 2;
@@ -98,7 +98,7 @@
 			this.groupBoxDecNumber.Controls.Add(this.labelDecNumber);
 			this.groupBoxDecNumber.Location = new System.Drawing.Point(14, 13);
 			this.groupBoxDecNumber.Name = "groupBoxDecNumber";
-			this.groupBoxDecNumber.Size = new System.Drawing.Size(545, 168);
+			this.groupBoxDecNumber.Size = new System.Drawing.Size(703, 216);
 			this.groupBoxDecNumber.TabIndex = 3;
 			this.groupBoxDecNumber.TabStop = false;
 			this.groupBoxDecNumber.Text = "Для десятичных чисел:";
@@ -107,7 +107,7 @@
 			// 
 			this.buttonDecCalc.Image = ((System.Drawing.Image)(resources.GetObject("buttonDecCalc.Image")));
 			this.buttonDecCalc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.buttonDecCalc.Location = new System.Drawing.Point(399, 14);
+			this.buttonDecCalc.Location = new System.Drawing.Point(242, 55);
 			this.buttonDecCalc.Name = "buttonDecCalc";
 			this.buttonDecCalc.Size = new System.Drawing.Size(126, 38);
 			this.buttonDecCalc.TabIndex = 1;
@@ -120,7 +120,7 @@
 			// 
 			this.labelHexValue.AutoSize = true;
 			this.labelHexValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelHexValue.Location = new System.Drawing.Point(242, 136);
+			this.labelHexValue.Location = new System.Drawing.Point(242, 185);
 			this.labelHexValue.Name = "labelHexValue";
 			this.labelHexValue.Size = new System.Drawing.Size(2, 18);
 			this.labelHexValue.TabIndex = 3;
@@ -129,7 +129,7 @@
 			// 
 			this.labelOctValue.AutoSize = true;
 			this.labelOctValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelOctValue.Location = new System.Drawing.Point(242, 109);
+			this.labelOctValue.Location = new System.Drawing.Point(242, 158);
 			this.labelOctValue.Name = "labelOctValue";
 			this.labelOctValue.Size = new System.Drawing.Size(2, 18);
 			this.labelOctValue.TabIndex = 3;
@@ -138,7 +138,7 @@
 			// 
 			this.labelBinValue.AutoSize = true;
 			this.labelBinValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelBinValue.Location = new System.Drawing.Point(242, 82);
+			this.labelBinValue.Location = new System.Drawing.Point(242, 131);
 			this.labelBinValue.Name = "labelBinValue";
 			this.labelBinValue.Size = new System.Drawing.Size(2, 18);
 			this.labelBinValue.TabIndex = 3;
@@ -147,7 +147,7 @@
 			// 
 			this.labelExpValue.AutoSize = true;
 			this.labelExpValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelExpValue.Location = new System.Drawing.Point(242, 56);
+			this.labelExpValue.Location = new System.Drawing.Point(242, 105);
 			this.labelExpValue.Name = "labelExpValue";
 			this.labelExpValue.Size = new System.Drawing.Size(2, 18);
 			this.labelExpValue.TabIndex = 3;
@@ -155,7 +155,7 @@
 			// labelHex
 			// 
 			this.labelHex.AutoSize = true;
-			this.labelHex.Location = new System.Drawing.Point(8, 136);
+			this.labelHex.Location = new System.Drawing.Point(8, 185);
 			this.labelHex.Name = "labelHex";
 			this.labelHex.Size = new System.Drawing.Size(208, 16);
 			this.labelHex.TabIndex = 2;
@@ -164,7 +164,7 @@
 			// labelOct
 			// 
 			this.labelOct.AutoSize = true;
-			this.labelOct.Location = new System.Drawing.Point(8, 109);
+			this.labelOct.Location = new System.Drawing.Point(8, 158);
 			this.labelOct.Name = "labelOct";
 			this.labelOct.Size = new System.Drawing.Size(158, 16);
 			this.labelOct.TabIndex = 2;
@@ -173,7 +173,7 @@
 			// labelBin
 			// 
 			this.labelBin.AutoSize = true;
-			this.labelBin.Location = new System.Drawing.Point(8, 82);
+			this.labelBin.Location = new System.Drawing.Point(8, 131);
 			this.labelBin.Name = "labelBin";
 			this.labelBin.Size = new System.Drawing.Size(118, 16);
 			this.labelBin.TabIndex = 2;
@@ -192,9 +192,9 @@
 			this.groupBoxBinNumber.Controls.Add(this.textBoxSignDec);
 			this.groupBoxBinNumber.Controls.Add(this.labelDecText);
 			this.groupBoxBinNumber.Controls.Add(this.buttonBinCalc);
-			this.groupBoxBinNumber.Location = new System.Drawing.Point(14, 187);
+			this.groupBoxBinNumber.Location = new System.Drawing.Point(14, 235);
 			this.groupBoxBinNumber.Name = "groupBoxBinNumber";
-			this.groupBoxBinNumber.Size = new System.Drawing.Size(545, 146);
+			this.groupBoxBinNumber.Size = new System.Drawing.Size(703, 195);
 			this.groupBoxBinNumber.TabIndex = 4;
 			this.groupBoxBinNumber.TabStop = false;
 			this.groupBoxBinNumber.Text = "Для двоичных чисел:";
@@ -203,7 +203,7 @@
 			// 
 			this.labelAddCodeValue.AutoSize = true;
 			this.labelAddCodeValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelAddCodeValue.Location = new System.Drawing.Point(240, 116);
+			this.labelAddCodeValue.Location = new System.Drawing.Point(243, 167);
 			this.labelAddCodeValue.Name = "labelAddCodeValue";
 			this.labelAddCodeValue.Size = new System.Drawing.Size(2, 18);
 			this.labelAddCodeValue.TabIndex = 8;
@@ -212,7 +212,7 @@
 			// 
 			this.labelReflexCodeValue.AutoSize = true;
 			this.labelReflexCodeValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelReflexCodeValue.Location = new System.Drawing.Point(240, 89);
+			this.labelReflexCodeValue.Location = new System.Drawing.Point(243, 140);
 			this.labelReflexCodeValue.Name = "labelReflexCodeValue";
 			this.labelReflexCodeValue.Size = new System.Drawing.Size(2, 18);
 			this.labelReflexCodeValue.TabIndex = 8;
@@ -221,7 +221,7 @@
 			// 
 			this.labelPrimeCodeValue.AutoSize = true;
 			this.labelPrimeCodeValue.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelPrimeCodeValue.Location = new System.Drawing.Point(240, 62);
+			this.labelPrimeCodeValue.Location = new System.Drawing.Point(243, 113);
 			this.labelPrimeCodeValue.Name = "labelPrimeCodeValue";
 			this.labelPrimeCodeValue.Size = new System.Drawing.Size(2, 18);
 			this.labelPrimeCodeValue.TabIndex = 8;
@@ -229,7 +229,7 @@
 			// labelAddCode
 			// 
 			this.labelAddCode.AutoSize = true;
-			this.labelAddCode.Location = new System.Drawing.Point(6, 116);
+			this.labelAddCode.Location = new System.Drawing.Point(9, 167);
 			this.labelAddCode.Name = "labelAddCode";
 			this.labelAddCode.Size = new System.Drawing.Size(148, 16);
 			this.labelAddCode.TabIndex = 7;
@@ -238,7 +238,7 @@
 			// labelReflexCode
 			// 
 			this.labelReflexCode.AutoSize = true;
-			this.labelReflexCode.Location = new System.Drawing.Point(6, 89);
+			this.labelReflexCode.Location = new System.Drawing.Point(9, 140);
 			this.labelReflexCode.Name = "labelReflexCode";
 			this.labelReflexCode.Size = new System.Drawing.Size(128, 16);
 			this.labelReflexCode.TabIndex = 7;
@@ -247,7 +247,7 @@
 			// labelPrimeCode
 			// 
 			this.labelPrimeCode.AutoSize = true;
-			this.labelPrimeCode.Location = new System.Drawing.Point(6, 62);
+			this.labelPrimeCode.Location = new System.Drawing.Point(9, 113);
 			this.labelPrimeCode.Name = "labelPrimeCode";
 			this.labelPrimeCode.Size = new System.Drawing.Size(108, 16);
 			this.labelPrimeCode.TabIndex = 7;
@@ -256,9 +256,9 @@
 			// textBoxSignDec
 			// 
 			this.textBoxSignDec.Location = new System.Drawing.Point(240, 25);
-			this.textBoxSignDec.MaxLength = 8;
+			this.textBoxSignDec.MaxLength = 32;
 			this.textBoxSignDec.Name = "textBoxSignDec";
-			this.textBoxSignDec.Size = new System.Drawing.Size(122, 23);
+			this.textBoxSignDec.Size = new System.Drawing.Size(446, 23);
 			this.textBoxSignDec.TabIndex = 0;
 			// 
 			// labelDecText
@@ -274,7 +274,7 @@
 			// 
 			this.buttonBinCalc.Image = ((System.Drawing.Image)(resources.GetObject("buttonBinCalc.Image")));
 			this.buttonBinCalc.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.buttonBinCalc.Location = new System.Drawing.Point(399, 14);
+			this.buttonBinCalc.Location = new System.Drawing.Point(240, 59);
 			this.buttonBinCalc.Name = "buttonBinCalc";
 			this.buttonBinCalc.Size = new System.Drawing.Size(126, 38);
 			this.buttonBinCalc.TabIndex = 1;
@@ -292,7 +292,7 @@
 			this.Font = new System.Drawing.Font("Lucida Console", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
 			this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
 			this.Name = "Numbers";
-			this.Size = new System.Drawing.Size(574, 348);
+			this.Size = new System.Drawing.Size(732, 442);
 			this.groupBoxDecNumber.ResumeLayout(false);
 			this.groupBoxDecNumber.PerformLayout();
 			this.groupBoxBinNumber.ResumeLayout(false);

@@ -28,17 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+			System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
 			this.tabControl = new System.Windows.Forms.TabControl();
 			this.CaesarCypherPage = new System.Windows.Forms.TabPage();
 			this.MorzeCodePage = new System.Windows.Forms.TabPage();
 			this.NumbersPage = new System.Windows.Forms.TabPage();
+			this.StringsPage = new System.Windows.Forms.TabPage();
+			this.ColorPage = new System.Windows.Forms.TabPage();
 			this.splitContainer = new System.Windows.Forms.SplitContainer();
 			this.contentDataGrid = new System.Windows.Forms.DataGridView();
 			this.ContentColumn = new System.Windows.Forms.DataGridViewButtonColumn();
 			this.labelTitle = new System.Windows.Forms.Label();
-			this.StringsPage = new System.Windows.Forms.TabPage();
-			this.ColorPage = new System.Windows.Forms.TabPage();
+			this.CodesPage = new System.Windows.Forms.TabPage();
 			this.tabControl.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
 			this.splitContainer.Panel1.SuspendLayout();
@@ -54,6 +55,7 @@
 			this.tabControl.Controls.Add(this.NumbersPage);
 			this.tabControl.Controls.Add(this.StringsPage);
 			this.tabControl.Controls.Add(this.ColorPage);
+			this.tabControl.Controls.Add(this.CodesPage);
 			this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.tabControl.Location = new System.Drawing.Point(0, 0);
 			this.tabControl.Name = "tabControl";
@@ -76,7 +78,7 @@
 			this.MorzeCodePage.Location = new System.Drawing.Point(4, 22);
 			this.MorzeCodePage.Name = "MorzeCodePage";
 			this.MorzeCodePage.Padding = new System.Windows.Forms.Padding(3);
-			this.MorzeCodePage.Size = new System.Drawing.Size(539, 595);
+			this.MorzeCodePage.Size = new System.Drawing.Size(679, 595);
 			this.MorzeCodePage.TabIndex = 1;
 			this.MorzeCodePage.Text = "2. Азбука Морзе";
 			this.MorzeCodePage.UseVisualStyleBackColor = true;
@@ -90,6 +92,26 @@
 			this.NumbersPage.TabIndex = 2;
 			this.NumbersPage.Text = "3. Числа";
 			this.NumbersPage.UseVisualStyleBackColor = true;
+			// 
+			// StringsPage
+			// 
+			this.StringsPage.Location = new System.Drawing.Point(4, 22);
+			this.StringsPage.Name = "StringsPage";
+			this.StringsPage.Padding = new System.Windows.Forms.Padding(3);
+			this.StringsPage.Size = new System.Drawing.Size(679, 595);
+			this.StringsPage.TabIndex = 3;
+			this.StringsPage.Text = "4. Строки";
+			this.StringsPage.UseVisualStyleBackColor = true;
+			// 
+			// ColorPage
+			// 
+			this.ColorPage.Location = new System.Drawing.Point(4, 22);
+			this.ColorPage.Name = "ColorPage";
+			this.ColorPage.Padding = new System.Windows.Forms.Padding(3);
+			this.ColorPage.Size = new System.Drawing.Size(679, 595);
+			this.ColorPage.TabIndex = 4;
+			this.ColorPage.Text = "5. Цвета";
+			this.ColorPage.UseVisualStyleBackColor = true;
 			// 
 			// splitContainer
 			// 
@@ -140,8 +162,8 @@
 			// 
 			// ContentColumn
 			// 
-			dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-			this.ContentColumn.DefaultCellStyle = dataGridViewCellStyle3;
+			dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+			this.ContentColumn.DefaultCellStyle = dataGridViewCellStyle2;
 			this.ContentColumn.Frozen = true;
 			this.ContentColumn.HeaderText = "Содержание";
 			this.ContentColumn.Name = "ContentColumn";
@@ -157,25 +179,15 @@
 			this.labelTitle.TabIndex = 0;
 			this.labelTitle.Text = "Содержание";
 			// 
-			// StringsPage
+			// CodesPage
 			// 
-			this.StringsPage.Location = new System.Drawing.Point(4, 22);
-			this.StringsPage.Name = "StringsPage";
-			this.StringsPage.Padding = new System.Windows.Forms.Padding(3);
-			this.StringsPage.Size = new System.Drawing.Size(679, 595);
-			this.StringsPage.TabIndex = 3;
-			this.StringsPage.Text = "4. Строки";
-			this.StringsPage.UseVisualStyleBackColor = true;
-			// 
-			// ColorPage
-			// 
-			this.ColorPage.Location = new System.Drawing.Point(4, 22);
-			this.ColorPage.Name = "ColorPage";
-			this.ColorPage.Padding = new System.Windows.Forms.Padding(3);
-			this.ColorPage.Size = new System.Drawing.Size(679, 595);
-			this.ColorPage.TabIndex = 4;
-			this.ColorPage.Text = "5. Цвета";
-			this.ColorPage.UseVisualStyleBackColor = true;
+			this.CodesPage.Location = new System.Drawing.Point(4, 22);
+			this.CodesPage.Name = "CodesPage";
+			this.CodesPage.Padding = new System.Windows.Forms.Padding(3);
+			this.CodesPage.Size = new System.Drawing.Size(679, 595);
+			this.CodesPage.TabIndex = 5;
+			this.CodesPage.Text = "6. Код Грея";
+			this.CodesPage.UseVisualStyleBackColor = true;
 			// 
 			// MainForm
 			// 
@@ -210,6 +222,7 @@
 		private System.Windows.Forms.TabPage NumbersPage;
 		private System.Windows.Forms.TabPage StringsPage;
 		private System.Windows.Forms.TabPage ColorPage;
+		private System.Windows.Forms.TabPage CodesPage;
 	}
 }
 
