@@ -22,35 +22,61 @@ namespace CADInfo.Pages
 
 		private void ButtonConvertToGray_Click ( object sender, EventArgs e )
 		{
+            var isParse = false;
+            labelBinInputGray.Text = string.Empty;
+            labelDecOutputValue.Text = string.Empty;
+            labelBinOutputValue.Text = string.Empty;
 			var grayCode = BinToGray( textBoxInputGray.Text );
-			labelDecInputGray.Text = Convert.ToString( uint.Parse( textBoxInputGray.Text ), 10 );
-			labelDecOutputValue.Text = Convert.ToString( uint.Parse( grayCode ), 10 );
-			labelBinOutputValue.Text = grayCode;
 
-			string BinToGray ( string number ) {
-				var isParse = uint.TryParse( number, out uint g );
+            if ( !isParse )
+	        {
+                return;
+	        }
 
-				if ( !isParse )
-				{
-					MessageBox.Show( "Ввели не правильное число " );
-					return string.Empty;
-				}
-				
-				return Convert.ToString( g ^ ( g >> 1 ), 2 );
+            if (grayCode != string.Empty)
+            {
+                labelBinInputGray.Text = Convert.ToString(Convert.ToInt32(textBoxInputGray.Text, 2));
+                labelDecOutputValue.Text = Convert.ToString(int.Parse(grayCode), 10);
+                labelBinOutputValue.Text = Convert.ToString(int.Parse(grayCode), 2);
+            }
+
+            string BinToGray ( string number ) {
+                isParse = int.TryParse( number, out var binNumber );
+
+                if ( !isParse )
+                {
+                    MessageBox.Show("Ввели не правильное число ");
+                    return string.Empty;
+                }
+
+                binNumber = Convert.ToInt32( number, 2 );
+                return Convert.ToString(binNumber ^ ( binNumber >> 1 ));
 			}
 		}
 
 		private void ButtonConvertOfGray_Click ( object sender, EventArgs e )
 		{
-			var grayCode = GrayToBin( textBoxInputGray.Text );
-			labelDecInputGray.Text = Convert.ToString( uint.Parse( textBoxInputGray.Text ), 10 );
-			labelDecOutputValue.Text = Convert.ToString( uint.Parse( grayCode ), 10 );
-			labelBinOutputValue.Text = grayCode;
+            var isParse = false;
+			labelBinInputGray.Text = string.Empty;
+            labelDecOutputValue.Text = string.Empty;
+            labelBinOutputValue.Text = string.Empty;
+            var grayCode = GrayToBin( textBoxInputGray.Text );
+
+            if ( !isParse )
+	        {
+                return;
+	        }
+
+            if (grayCode != string.Empty)
+            {
+                labelBinInputGray.Text = Convert.ToString(Convert.ToInt32(textBoxInputGray.Text, 2));
+                labelDecOutputValue.Text = Convert.ToString(int.Parse(grayCode), 10);
+                labelBinOutputValue.Text = Convert.ToString(int.Parse(grayCode), 2);
+            }
 
 			string GrayToBin ( string number )
 			{
-				uint sum = 0;
-				var isParse = uint.TryParse( number, out sum );
+				isParse = int.TryParse( number, out var binNumber );
 
 				if ( !isParse )
 				{
@@ -59,13 +85,16 @@ namespace CADInfo.Pages
 				}
 				else
 				{
-					for ( int i = 0; i < number.Length; sum ^= sum, i-- )
-					{
-						sum >>= 1;
-					}
-				}
+                    binNumber = Convert.ToInt32( number, 2 );
+                    int sum;
 
-				return Convert.ToString( sum, 2 );
+					for ( sum = 0; binNumber > 0; binNumber >>= 1 )
+					{
+						sum ^= binNumber;
+					}
+
+                    return Convert.ToString( sum );
+				}
 			}
 		}
 	}

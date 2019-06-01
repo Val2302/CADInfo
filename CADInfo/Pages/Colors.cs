@@ -12,40 +12,38 @@ using System.Runtime.InteropServices;
 namespace CADInfo.Pages
 {
 	public partial class Colors : UserControl
-	{
-		[DllImport( "Gdi32.dll" )]
-		public static extern int GetPixel (
-			System.IntPtr hdc,    // handle to DC
-			int nXPos,  // x-coordinate of pixel
-			int nYPos   // y-coordinate of pixel
-		);
-
-		[DllImport( "User32.dll" )]
-		public static extern IntPtr GetDC ( IntPtr wnd );
-
-		[DllImport( "User32.dll" )]
-		public static extern void ReleaseDC ( IntPtr dc );
-
+	{  
 		public Colors ( )
 		{
 			InitializeComponent( );
 
 			Dock = DockStyle.Fill;
 			Visible = true;
-			var centerWidth = pictureBoxImage.Width / 2;
-			var centerHeight = pictureBoxImage.Height / 2;
-			var selectColor = ( pictureBoxImage.Image as Bitmap ).GetPixel( centerWidth, centerHeight );
-			ShowColors( selectColor );
+
+            try
+            {
+                var centerWidth = pictureBoxImage.Width / 2;
+                var centerHeight = pictureBoxImage.Height / 2;
+                var selectColor = (pictureBoxImage.Image as Bitmap).GetPixel(centerWidth, centerHeight);
+                ShowColors(selectColor);
+            }
+            catch
+            {
+            }
 		}
 
 		private void PictureBoxImage_MouseClick ( object sender, MouseEventArgs e )
 		{
-			//var selectColor = ( pictureBoxImage.Image as Bitmap ).GetPixel( e.X, e.Y );
-
-			IntPtr dc=GetDC(IntPtr.Zero);
-			var selectColor = ColorTranslator.FromWin32(GetPixel(dc,e.X,e.Y));
-			ShowColors( selectColor );
-		}
+            try
+            {
+                var selectColor = (pictureBoxImage.Image as Bitmap).GetPixel(e.X, e.Y);
+                ShowColors(selectColor);
+                ShowColors(selectColor);
+            }
+            catch
+            {
+            }
+        }
 
 		void ShowColors ( Color selectColor )
 		{
@@ -185,5 +183,5 @@ namespace CADInfo.Pages
 				}
 			}
 		}
-	}
+    }
 }

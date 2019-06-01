@@ -52,10 +52,21 @@ namespace CADInfo.Pages
 			labelStandartCode.Text = string.Empty;
 
 			string[] words = textBoxString.Text.Split( ' ' );
-
+            
 			foreach ( var word in words )
 			{
-				labelOutput.Text += char.Parse( word ).ToString( ) + " ";
+				var isParse = char.TryParse( word, out char symbol );
+
+                if ( isParse )
+                {
+                    labelOutput.Text += symbol.ToString( );
+                }
+                else
+                {
+                    MessageBox.Show( "Введены не коды символов" );
+                    textBoxString.Text = string.Empty;
+                    return;
+                }
 			}
 
 			labelInputCode.Text = HashCode( labelOutput.Text ).ToString( );
@@ -74,5 +85,5 @@ namespace CADInfo.Pages
 
 			return hash;
 		}
-	}
+    }
 }

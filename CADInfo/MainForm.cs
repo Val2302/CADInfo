@@ -48,5 +48,5 @@ namespace CADInfo
 				new AboutForm( ).ShowDialog( );
 			}
 		}
-	}
+    }
 }
