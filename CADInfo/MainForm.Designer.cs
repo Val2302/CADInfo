@@ -35,7 +35,7 @@
             this.NumbersPage = new System.Windows.Forms.TabPage();
             this.StringsPage = new System.Windows.Forms.TabPage();
             this.ColorPage = new System.Windows.Forms.TabPage();
-            this.CodesPage = new System.Windows.Forms.TabPage();
+            this.GrayCodePage = new System.Windows.Forms.TabPage();
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.contentDataGrid = new System.Windows.Forms.DataGridView();
             this.labelTitle = new System.Windows.Forms.Label();
@@ -55,7 +55,7 @@
             this.tabControl.Controls.Add(this.NumbersPage);
             this.tabControl.Controls.Add(this.StringsPage);
             this.tabControl.Controls.Add(this.ColorPage);
-            this.tabControl.Controls.Add(this.CodesPage);
+            this.tabControl.Controls.Add(this.GrayCodePage);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tabControl.Location = new System.Drawing.Point(0, 0);
             this.tabControl.Name = "tabControl";
@@ -115,13 +115,13 @@
             // 
             // CodesPage
             // 
-            this.CodesPage.Location = new System.Drawing.Point(4, 22);
-            this.CodesPage.Name = "CodesPage";
-            this.CodesPage.Padding = new System.Windows.Forms.Padding(3);
-            this.CodesPage.Size = new System.Drawing.Size(717, 595);
-            this.CodesPage.TabIndex = 5;
-            this.CodesPage.Text = "6. Код Грея";
-            this.CodesPage.UseVisualStyleBackColor = true;
+            this.GrayCodePage.Location = new System.Drawing.Point(4, 22);
+            this.GrayCodePage.Name = "CodesPage";
+            this.GrayCodePage.Padding = new System.Windows.Forms.Padding(3);
+            this.GrayCodePage.Size = new System.Drawing.Size(717, 595);
+            this.GrayCodePage.TabIndex = 5;
+            this.GrayCodePage.Text = "6. Код Грея";
+            this.GrayCodePage.UseVisualStyleBackColor = true;
             // 
             // splitContainer
             // 
@@ -225,7 +225,7 @@
 		private System.Windows.Forms.TabPage NumbersPage;
 		private System.Windows.Forms.TabPage StringsPage;
 		private System.Windows.Forms.TabPage ColorPage;
-		private System.Windows.Forms.TabPage CodesPage;
+		private System.Windows.Forms.TabPage GrayCodePage;
         private System.Windows.Forms.DataGridViewButtonColumn ContentColumn;
     }
 }

@@ -71,11 +71,11 @@
     <Compile Include="Pages\CodeMorze.Designer.cs">
       <DependentUpon>CodeMorze.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pages\Codes.cs">
+    <Compile Include="Pages\GrayCode.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Pages\Codes.Designer.cs">
-      <DependentUpon>Codes.cs</DependentUpon>
+    <Compile Include="Pages\GrayCode.Designer.cs">
+      <DependentUpon>GrayCode.cs</DependentUpon>
     </Compile>
     <Compile Include="Pages\Colors.cs">
       <SubType>UserControl</SubType>
@@ -115,8 +115,8 @@
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pages\Codes.resx">
-      <DependentUpon>Codes.cs</DependentUpon>
+    <EmbeddedResource Include="Pages\GrayCode.resx">
+      <DependentUpon>GrayCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\Colors.resx">
       <DependentUpon>Colors.cs</DependentUpon>

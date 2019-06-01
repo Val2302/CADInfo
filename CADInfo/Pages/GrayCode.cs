@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CADInfo.Pages
 {
-    public partial class Codes : UserControl
+    public partial class GrayCode : UserControl
     {
-        public Codes()
+        public GrayCode()
         {
             InitializeComponent();
 
@@ -23,7 +23,7 @@ namespace CADInfo.Pages
         private void ButtonConvertToGray_Click(object sender, EventArgs e)
         {
             var isParse = false;
-            labelBinInputGray.Text = string.Empty;
+            labelDecInputGray.Text = string.Empty;
             labelDecOutputValue.Text = string.Empty;
             labelBinOutputValue.Text = string.Empty;
             var grayCode = BinToGray(textBoxInputGray.Text);
@@ -35,7 +35,7 @@ namespace CADInfo.Pages
 
             if (grayCode != string.Empty)
             {
-                labelBinInputGray.Text = Convert.ToString(Convert.ToInt32(textBoxInputGray.Text, 2));
+                labelDecInputGray.Text = Convert.ToString(Convert.ToInt32(textBoxInputGray.Text, 2));
                 labelDecOutputValue.Text = Convert.ToString(int.Parse(grayCode), 10);
                 labelBinOutputValue.Text = Convert.ToString(int.Parse(grayCode), 2);
             }
@@ -58,7 +58,7 @@ namespace CADInfo.Pages
         private void ButtonConvertOfGray_Click(object sender, EventArgs e)
         {
             var isParse = false;
-            labelBinInputGray.Text = string.Empty;
+            labelDecInputGray.Text = string.Empty;
             labelDecOutputValue.Text = string.Empty;
             labelBinOutputValue.Text = string.Empty;
             var grayCode = GrayToBin(textBoxInputGray.Text);
@@ -70,7 +70,7 @@ namespace CADInfo.Pages
 
             if (grayCode != string.Empty)
             {
-                labelBinInputGray.Text = Convert.ToString(Convert.ToInt32(textBoxInputGray.Text, 2));
+                labelDecInputGray.Text = Convert.ToString(Convert.ToInt32(textBoxInputGray.Text, 2));
                 labelDecOutputValue.Text = Convert.ToString(int.Parse(grayCode), 10);
                 labelBinOutputValue.Text = Convert.ToString(int.Parse(grayCode), 2);
             }
