@@ -10,28 +10,28 @@ using System.Windows.Forms;
 
 namespace CADInfo.Pages
 {
-	public partial class Codes : UserControl
-	{
-		public Codes ( )
-		{
-			InitializeComponent( );
+    public partial class Codes : UserControl
+    {
+        public Codes()
+        {
+            InitializeComponent();
 
-			Dock = DockStyle.Fill;
-			Visible = true;
-		}
+            Dock = DockStyle.Fill;
+            Visible = true;
+        }
 
-		private void ButtonConvertToGray_Click ( object sender, EventArgs e )
-		{
+        private void ButtonConvertToGray_Click(object sender, EventArgs e)
+        {
             var isParse = false;
             labelBinInputGray.Text = string.Empty;
             labelDecOutputValue.Text = string.Empty;
             labelBinOutputValue.Text = string.Empty;
-			var grayCode = BinToGray( textBoxInputGray.Text );
+            var grayCode = BinToGray(textBoxInputGray.Text);
 
-            if ( !isParse )
-	        {
+            if (!isParse)
+            {
                 return;
-	        }
+            }
 
             if (grayCode != string.Empty)
             {
@@ -40,32 +40,33 @@ namespace CADInfo.Pages
                 labelBinOutputValue.Text = Convert.ToString(int.Parse(grayCode), 2);
             }
 
-            string BinToGray ( string number ) {
-                isParse = int.TryParse( number, out var binNumber );
+            string BinToGray(string number)
+            {
+                isParse = int.TryParse(number, out var binNumber);
 
-                if ( !isParse )
+                if (!isParse)
                 {
                     MessageBox.Show("Ввели не правильное число ");
                     return string.Empty;
                 }
 
-                binNumber = Convert.ToInt32( number, 2 );
-                return Convert.ToString(binNumber ^ ( binNumber >> 1 ));
-			}
-		}
+                binNumber = Convert.ToInt32(number, 2);
+                return Convert.ToString(binNumber ^ (binNumber >> 1));
+            }
+        }
 
-		private void ButtonConvertOfGray_Click ( object sender, EventArgs e )
-		{
+        private void ButtonConvertOfGray_Click(object sender, EventArgs e)
+        {
             var isParse = false;
-			labelBinInputGray.Text = string.Empty;
+            labelBinInputGray.Text = string.Empty;
             labelDecOutputValue.Text = string.Empty;
             labelBinOutputValue.Text = string.Empty;
-            var grayCode = GrayToBin( textBoxInputGray.Text );
+            var grayCode = GrayToBin(textBoxInputGray.Text);
 
-            if ( !isParse )
-	        {
+            if (!isParse)
+            {
                 return;
-	        }
+            }
 
             if (grayCode != string.Empty)
             {
@@ -74,28 +75,28 @@ namespace CADInfo.Pages
                 labelBinOutputValue.Text = Convert.ToString(int.Parse(grayCode), 2);
             }
 
-			string GrayToBin ( string number )
-			{
-				isParse = int.TryParse( number, out var binNumber );
+            string GrayToBin(string number)
+            {
+                isParse = int.TryParse(number, out var binNumber);
 
-				if ( !isParse )
-				{
-					MessageBox.Show( "Ввели не правильное число " );
-					return string.Empty;
-				}
-				else
-				{
-                    binNumber = Convert.ToInt32( number, 2 );
+                if (!isParse)
+                {
+                    MessageBox.Show("Ввели не правильное число ");
+                    return string.Empty;
+                }
+                else
+                {
+                    binNumber = Convert.ToInt32(number, 2);
                     int sum;
 
-					for ( sum = 0; binNumber > 0; binNumber >>= 1 )
-					{
-						sum ^= binNumber;
-					}
+                    for (sum = 0; binNumber > 0; binNumber >>= 1)
+                    {
+                        sum ^= binNumber;
+                    }
 
-                    return Convert.ToString( sum );
-				}
-			}
-		}
-	}
+                    return Convert.ToString(sum);
+                }
+            }
+        }
+    }
 }
