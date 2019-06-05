@@ -37,7 +37,7 @@
 			this.labelStandartCodeText = new System.Windows.Forms.Label();
 			this.labelInputCodeText = new System.Windows.Forms.Label();
 			this.labelStandartCode = new System.Windows.Forms.Label();
-			this.labelInputCode = new System.Windows.Forms.Label();
+			this.labeMylCode = new System.Windows.Forms.Label();
 			this.buttonConvertToSymbols = new System.Windows.Forms.Button();
 			this.groupBoxOutput.SuspendLayout();
 			this.groupBoxHash.SuspendLayout();
@@ -99,7 +99,7 @@
 			this.groupBoxHash.Controls.Add(this.labelStandartCodeText);
 			this.groupBoxHash.Controls.Add(this.labelInputCodeText);
 			this.groupBoxHash.Controls.Add(this.labelStandartCode);
-			this.groupBoxHash.Controls.Add(this.labelInputCode);
+			this.groupBoxHash.Controls.Add(this.labeMylCode);
 			this.groupBoxHash.Location = new System.Drawing.Point(11, 144);
 			this.groupBoxHash.Name = "groupBoxHash";
 			this.groupBoxHash.Size = new System.Drawing.Size(499, 80);
@@ -134,14 +134,14 @@
 			this.labelStandartCode.Size = new System.Drawing.Size(2, 15);
 			this.labelStandartCode.TabIndex = 5;
 			// 
-			// labelInputCode
+			// labeMylCode
 			// 
-			this.labelInputCode.AutoSize = true;
-			this.labelInputCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.labelInputCode.Location = new System.Drawing.Point(87, 23);
-			this.labelInputCode.Name = "labelInputCode";
-			this.labelInputCode.Size = new System.Drawing.Size(2, 15);
-			this.labelInputCode.TabIndex = 4;
+			this.labeMylCode.AutoSize = true;
+			this.labeMylCode.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+			this.labeMylCode.Location = new System.Drawing.Point(87, 23);
+			this.labeMylCode.Name = "labeMylCode";
+			this.labeMylCode.Size = new System.Drawing.Size(2, 15);
+			this.labeMylCode.TabIndex = 4;
 			// 
 			// buttonConvertToSymbols
 			// 
@@ -185,7 +185,7 @@
 		private System.Windows.Forms.Label labelStandartCodeText;
 		private System.Windows.Forms.Label labelInputCodeText;
 		private System.Windows.Forms.Label labelStandartCode;
-		private System.Windows.Forms.Label labelInputCode;
+		private System.Windows.Forms.Label labeMylCode;
 		private System.Windows.Forms.Button buttonConvertToSymbols;
 	}
 }

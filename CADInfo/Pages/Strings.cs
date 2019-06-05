@@ -28,7 +28,7 @@ namespace CADInfo.Pages
 			}
 
 			labelOutput.Text = string.Empty;
-			labelInputCode.Text = string.Empty;
+			labeMylCode.Text = string.Empty;
 			labelStandartCode.Text = string.Empty;
 			
 			foreach ( int symbol in textBoxString.Text )
@@ -36,7 +36,7 @@ namespace CADInfo.Pages
 				labelOutput.Text += symbol.ToString( ) + " ";
 			}
 
-			labelInputCode.Text = HashCode( labelOutput.Text ).ToString( );
+			labeMylCode.Text = HashCode( labelOutput.Text ).ToString( );
 			labelStandartCode.Text = labelOutput.Text.GetHashCode( ).ToString( );
 		}
 
@@ -48,17 +48,28 @@ namespace CADInfo.Pages
 			}
 
 			labelOutput.Text = string.Empty;
-			labelInputCode.Text = string.Empty;
+			labeMylCode.Text = string.Empty;
 			labelStandartCode.Text = string.Empty;
 
 			string[] words = textBoxString.Text.Split( ' ' );
-
+            
 			foreach ( var word in words )
 			{
-				labelOutput.Text += char.Parse( word ).ToString( ) + " ";
+				var isParse = char.TryParse( word, out char symbol );
+
+                if ( isParse )
+                {
+                    labelOutput.Text += symbol.ToString( );
+                }
+                else
+                {
+                    MessageBox.Show( "Введены не коды символов" );
+                    textBoxString.Text = string.Empty;
+                    return;
+                }
 			}
 
-			labelInputCode.Text = HashCode( labelOutput.Text ).ToString( );
+			labeMylCode.Text = HashCode( labelOutput.Text ).ToString( );
 			labelStandartCode.Text = labelOutput.Text.GetHashCode( ).ToString( );
 		}
 
@@ -69,10 +80,10 @@ namespace CADInfo.Pages
 
 			for ( int i = 0; i < text.Length; i++ )
 			{
-				hash = UTF_TABLE_LENGTH << ( ( text[ i ] + 1 ) * ( i + 1 ) );
+				hash = UTF_TABLE_LENGTH << ( ( ( ( int ) text[ i ] ) ) * ( i + 1 ) );
 			}
 
 			return hash;
 		}
-	}
+    }
 }

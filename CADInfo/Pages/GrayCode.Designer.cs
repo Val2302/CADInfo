@@ -1,6 +1,6 @@
 ﻿namespace CADInfo.Pages
 {
-	partial class Codes
+	partial class GrayCode
 	{
 		/// <summary> 
 		/// Обязательная переменная конструктора.
@@ -35,7 +35,7 @@
 			this.labelDecOutputValue = new System.Windows.Forms.Label();
 			this.labelBinGrayText = new System.Windows.Forms.Label();
 			this.groupBoxInputGray = new System.Windows.Forms.GroupBox();
-			this.label6 = new System.Windows.Forms.Label();
+			this.labelDecInputText = new System.Windows.Forms.Label();
 			this.labelDecInputGray = new System.Windows.Forms.Label();
 			this.buttonConvertOfGray = new System.Windows.Forms.Button();
 			this.buttonConvertToGray = new System.Windows.Forms.Button();
@@ -114,7 +114,7 @@
 			// 
 			// groupBoxInputGray
 			// 
-			this.groupBoxInputGray.Controls.Add(this.label6);
+			this.groupBoxInputGray.Controls.Add(this.labelDecInputText);
 			this.groupBoxInputGray.Controls.Add(this.labelDecInputGray);
 			this.groupBoxInputGray.Controls.Add(this.buttonConvertOfGray);
 			this.groupBoxInputGray.Controls.Add(this.buttonConvertToGray);
@@ -127,15 +127,15 @@
 			this.groupBoxInputGray.TabStop = false;
 			this.groupBoxInputGray.Text = "Ввод:";
 			// 
-			// label6
+			// labelDecInputText
 			// 
-			this.label6.AutoSize = true;
-			this.label6.Location = new System.Drawing.Point(10, 45);
-			this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-			this.label6.Name = "label6";
-			this.label6.Size = new System.Drawing.Size(168, 16);
-			this.label6.TabIndex = 4;
-			this.label6.Text = "Десятичное число";
+			this.labelDecInputText.AutoSize = true;
+			this.labelDecInputText.Location = new System.Drawing.Point(10, 45);
+			this.labelDecInputText.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+			this.labelDecInputText.Name = "labelDecInputText";
+			this.labelDecInputText.Size = new System.Drawing.Size(168, 16);
+			this.labelDecInputText.TabIndex = 4;
+			this.labelDecInputText.Text = "Десятичное число";
 			// 
 			// labelDecInputGray
 			// 
@@ -152,7 +152,7 @@
 			this.buttonConvertOfGray.Location = new System.Drawing.Point(349, 76);
 			this.buttonConvertOfGray.Name = "buttonConvertOfGray";
 			this.buttonConvertOfGray.Size = new System.Drawing.Size(146, 54);
-			this.buttonConvertOfGray.TabIndex = 3;
+			this.buttonConvertOfGray.TabIndex = 2;
 			this.buttonConvertOfGray.Text = "Преобразовать из кода Грея";
 			this.buttonConvertOfGray.UseVisualStyleBackColor = true;
 			this.buttonConvertOfGray.Click += new System.EventHandler(this.ButtonConvertOfGray_Click);
@@ -162,7 +162,7 @@
 			this.buttonConvertToGray.Location = new System.Drawing.Point(197, 76);
 			this.buttonConvertToGray.Name = "buttonConvertToGray";
 			this.buttonConvertToGray.Size = new System.Drawing.Size(146, 54);
-			this.buttonConvertToGray.TabIndex = 2;
+			this.buttonConvertToGray.TabIndex = 1;
 			this.buttonConvertToGray.Text = "Преобразовать в код Грея";
 			this.buttonConvertToGray.UseVisualStyleBackColor = true;
 			this.buttonConvertToGray.Click += new System.EventHandler(this.ButtonConvertToGray_Click);
@@ -174,7 +174,7 @@
 			this.textBoxInputGray.MaxLength = 8;
 			this.textBoxInputGray.Name = "textBoxInputGray";
 			this.textBoxInputGray.Size = new System.Drawing.Size(392, 23);
-			this.textBoxInputGray.TabIndex = 1;
+			this.textBoxInputGray.TabIndex = 0;
 			// 
 			// labelBinTextGrayInput
 			// 
@@ -217,7 +217,7 @@
 		private System.Windows.Forms.GroupBox groupBoxOutputGray;
 		private System.Windows.Forms.Button buttonConvertOfGray;
 		private System.Windows.Forms.Label labelBinOutputValue;
-		private System.Windows.Forms.Label label6;
+		private System.Windows.Forms.Label labelDecInputText;
 		private System.Windows.Forms.Label labelDecInputGray;
 	}
 }
