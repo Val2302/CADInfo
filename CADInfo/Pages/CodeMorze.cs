@@ -220,28 +220,27 @@ namespace CADInfo.Pages
 
 		private void ButtonPlay_Click ( object sender, EventArgs e )
 		{
-			var dotTime = 30;
-			var dashTime = dotTime * 3;
-			var spaceTime = dotTime * 7;
+			var timeLength = 100;
 			var dot = '•';
 			var dash = '‒';
-			var frequency = 3000;
+			var dotFrequency = 2000;
+			var dashFrequency = 1000;
 
 			foreach ( var symbol in textBoxOutput.Text )
 			{
 				if ( symbol == dot )
 				{
-					Beep( frequency, dotTime );
-					Thread.Sleep( dashTime );
+					Beep(dotFrequency, timeLength );
+					Thread.Sleep( timeLength );
 				}
 				else if ( symbol == dash )
 				{
-					Beep( frequency, dashTime );
-					Thread.Sleep( dashTime );
+					Beep(dashFrequency, timeLength);
+					Thread.Sleep(timeLength);
 				}
 				else
 				{
-					Thread.Sleep( spaceTime );
+					Thread.Sleep(timeLength);
 				}
 			}
 		}
