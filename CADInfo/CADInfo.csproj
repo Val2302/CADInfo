@@ -59,6 +59,12 @@
     <Compile Include="AboutForm.Designer.cs">
       <DependentUpon>AboutForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pages\BaseCode.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Pages\BaseCode.Designer.cs">
+      <DependentUpon>BaseCode.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pages\CaesarCrypt.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -105,6 +111,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="AboutForm.resx">
       <DependentUpon>AboutForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pages\BaseCode.resx">
+      <DependentUpon>BaseCode.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pages\CaesarCrypt.resx">
       <DependentUpon>CaesarCrypt.cs</DependentUpon>

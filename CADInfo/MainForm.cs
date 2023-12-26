@@ -23,6 +23,7 @@ namespace CADInfo
 			StringsPage.Controls.Add( new Strings( ) );
 			ColorPage.Controls.Add( new Colors( ) );
 			GrayCodePage.Controls.Add( new GrayCode( ) );
+			BaseCodePage.Controls.Add( new BaseCode( ) );
 		}
 
 		private void MainForm_Shown ( object sender, EventArgs e )

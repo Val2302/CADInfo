@@ -66,10 +66,10 @@
             this.linkLabelEmail.AutoSize = true;
             this.linkLabelEmail.Location = new System.Drawing.Point(97, 126);
             this.linkLabelEmail.Name = "linkLabelEmail";
-            this.linkLabelEmail.Size = new System.Drawing.Size(105, 13);
+            this.linkLabelEmail.Size = new System.Drawing.Size(128, 13);
             this.linkLabelEmail.TabIndex = 2;
             this.linkLabelEmail.TabStop = true;
-            this.linkLabelEmail.Text = "vallior23@yandex.by";
+            this.linkLabelEmail.Text = "dolgove4nyP@yandex.by";
             // 
             // labelTitle
             // 
@@ -121,9 +121,9 @@
             this.labelFullName.AutoSize = true;
             this.labelFullName.Location = new System.Drawing.Point(97, 79);
             this.labelFullName.Name = "labelFullName";
-            this.labelFullName.Size = new System.Drawing.Size(86, 13);
+            this.labelFullName.Size = new System.Drawing.Size(111, 13);
             this.labelFullName.TabIndex = 9;
-            this.labelFullName.Text = "Овчаренко В.И.";
+            this.labelFullName.Text = "Павел Долговечный";
             // 
             // labelDeveloper
             // 
